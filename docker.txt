@@ -1,0 +1,4 @@
+docker run -d --name med -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=vollmed_api -e MYSQL_USER=med -e MYSQL_PASSWORD=root mysql:8
+
+docker exec -it med mysql -uroot -p
+
